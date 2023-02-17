@@ -27,8 +27,74 @@ Some common styles
 	clear: both;
 }
 
+/* body */
+body {
+	background-color: #f7fcfc;
+}
+
+/* container */
+.mw-container {
+	max-width: 1040px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+/* page header */
+.mw-page-header {
+	margin-top: 60px;
+	font-family: 'Nunito', sans-serif;
+	font-style: normal;
+}
+.mw-page-title {
+	margin: 0 0 20px;
+	font-size: 49px;
+	font-weight: 900;
+	letter-spacing: 1px;
+	line-height: 1.1;
+	color: #212228;
+}
+.mw-page-description {
+	margin: 0 0 30px;
+	font-size: 22px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	line-height: 1.3;
+	color: #303137;
+}
+.mw-download-link {
+	display: inline-block;
+	padding: 15px 20px;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	line-height: 24px;
+	text-decoration: none;
+	color: #00b0af;
+	border: 1px solid #00b0af;
+	border-bottom-width: 3px;
+	border-left-width: 2px;
+	border-radius: 29px;
+
+	-webkit-transition: color 0.2s ease-out, border-color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+	transition: color 0.2s ease-out, border-color 0.2s ease-out, transform 0.2s ease-out;
+}
+.mw-download-link:hover,
+.mw-download-link:focus {
+	text-decoration: none;
+	color: #00cecd;
+	border-color: #00cecd;
+
+	-webkit-transform: translate(-2px, -2px);
+	transform: translate(-2px, -2px);
+}
+.mw-download-link i {
+	margin-right: 10px;
+}
+
 
 /*
-- other styles below... -
+Menu ** END **
 --------------------------------------------------------
 */
