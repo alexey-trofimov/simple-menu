@@ -20,16 +20,10 @@ Some common styles
 	box-sizing: border-box;
 }
 
-/* clearfix */
-.mw-clearfix::after {
-	content: '';
-	display: table;
-	clear: both;
-}
-
 /* body */
 body {
-	background-color: #f7fcfc;
+	background-color: #fcfefe;
+	font-family: 'Nunito', sans-serif;
 }
 
 /* container */
@@ -43,58 +37,180 @@ body {
 
 /* page header */
 .mw-page-header {
-	margin-top: 60px;
-	font-family: 'Nunito', sans-serif;
-	font-style: normal;
+	margin-top: 80px;
+	margin-bottom: 80px;
 }
+
+/* page title (h1) */
 .mw-page-title {
 	margin: 0 0 20px;
-	font-size: 49px;
-	font-weight: 900;
-	letter-spacing: 1px;
+	font-size: 50px;
+	font-weight: 800;
 	line-height: 1.1;
-	color: #212228;
+	color: #282e2e;
 }
+
+/* page description (p) */
 .mw-page-description {
-	margin: 0 0 30px;
+	margin: 0 0 20px;
 	font-size: 22px;
-	font-weight: 600;
-	letter-spacing: 0.5px;
+	font-weight: 500;
 	line-height: 1.3;
-	color: #303137;
+	color: #424a4b;
 }
+
+/* download link (a) */
 .mw-download-link {
 	display: inline-block;
-	padding: 15px 20px;
+	padding: 5px 0;
 	font-size: 18px;
-	font-weight: 700;
-	letter-spacing: 0.5px;
-	line-height: 24px;
+	font-weight: 500;
+	line-height: 1.35;
 	text-decoration: none;
-	color: #00b0af;
-	border: 1px solid #00b0af;
-	border-bottom-width: 3px;
-	border-left-width: 2px;
-	border-radius: 29px;
-
-	-webkit-transition: color 0.2s ease-out, border-color 0.2s ease-out, -webkit-transform 0.2s ease-out;
-	transition: color 0.2s ease-out, border-color 0.2s ease-out, transform 0.2s ease-out;
+	color: #424a4b;
 }
 .mw-download-link:hover,
 .mw-download-link:focus {
 	text-decoration: none;
-	color: #00cecd;
-	border-color: #00cecd;
-
-	-webkit-transform: translate(-2px, -2px);
-	transform: translate(-2px, -2px);
+	color: #424a4b;
 }
 .mw-download-link i {
 	margin-right: 10px;
+	font-size: 18px;
+	position: relative;
+	top: 1px;
+}
+.mw-download-link .mw-text {
+	position: relative;
+}
+.mw-download-link .mw-text::after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #00c2ce;
+
+	-webkit-transition: bottom 0.1s linear;
+	transition: bottom 0.1s linear;
+}
+.mw-download-link:hover .mw-text::after,
+.mw-download-link:focus .mw-text::after {
+	bottom: -8px;
+}
+
+/* menu label */
+.mw-menu-label {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	color: #424a4b;
 }
 
 
 /*
-Menu ** END **
+Menu
 --------------------------------------------------------
 */
+
+/* box-sizing for the menu */
+.mw-border-box,
+.mw-border-box * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.mw-border-box::before,
+.mw-border-box::after,
+.mw-border-box *::before,
+.mw-border-box *::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* menu container */
+.mw-menu {
+	max-width: 1000px;
+	height: 90px;
+	margin: 25px auto 80px;
+	padding: 0 25px;
+	border-radius: 45px;
+	background-color: #ffffff;
+	box-shadow: 0 0 0 1px #282e2e, 2px 2px 0 0 #282e2e;
+}
+.mw-menu::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/* menu list (ul>li>a) */
+.mw-menu-list {
+	list-style: none;
+	margin: 20px 0 0;
+	padding: 0;
+	font-family: 'Nunito', sans-serif;
+}
+.mw-menu-list li {
+	display: inline-block;
+	white-space: nowrap;
+}
+.mw-menu-list li a {
+	display: inline-block;
+	line-height: 50px;
+	border-radius: 25px;
+	text-decoration: none;
+}
+.mw-menu-list li a:hover,
+.mw-menu-list li a:focus {
+	text-decoration: none;
+}
+
+/* menu items (ul>li>a) */
+.mw-menu-items {
+	float: left;
+}
+.mw-menu-items li a {
+	padding: 0 15px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #282e2e;
+	background-color: transparent;
+
+	-webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+	transition: color 0.2s ease-out, background-color 0.2s ease-out;
+}
+.mw-menu-items li a:hover,
+.mw-menu-items li a:focus {
+	color: #ffffff;
+	background-color: #282e2e;
+}
+.mw-menu-items li a i[class*="fa-"]:first-child {
+	margin-right: 10px;
+}
+
+/* social links (ul>li>a) */
+.mw-social-links {
+	float: right;
+	margin-right: 9px;
+}
+.mw-social-links li a {
+	padding: 0 6px;
+	font-size: 18px;
+	color: #282e2e;
+
+	-webkit-transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+	transition: color 0.2s ease-out, transform 0.2s ease-out;
+}
+.mw-social-links li a:hover,
+.mw-social-links li a:focus {
+	color: #424a4b;
+
+	-webkit-transform: translate(-2px, -2px);
+	transform: translate(-2px, -2px);
+}
+
+/* menu style 2 (with background) */
