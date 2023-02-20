@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!-- Title and meta -->
+	<title>Простое Горизонтальное Меню (HTML и CSS)</title>
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="Простое меню с ссылками на социальные профили, без поддержки выпадающих подменю (HTML и CSS).">
+
+	<!-- Website icons -->
+	<link rel="icon" href="img/favicon-32-32.png" sizes="32x32">
+	<link rel="icon" href="img/favicon-192-192.png" sizes="192x192">
+	<link rel="apple-touch-icon-precomposed" href="img/favicon-180-180.png">
+	<meta name="msapplication-TileImage" content="img/favicon-270-270.png">
+
+	<!-- Google fonts -->
+	<!-- Preconnect -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- Nunito (400, 400 Italic, 500, 500 Italic, 700, 700 Italic, 800) -->
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+	<!-- CSS files -->
+	<!-- 1: normalize.css ( https://github.com/necolas/normalize.css ) -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- 2: Font Awesome Free Icons v6.2.1 ( https://fontawesome.com/icons ) -->
+	<link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+	<!-- 3: Main stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- page header -->
+<header class="mw-page-header mw-container">
+	<h1 class="mw-page-title">Простое горизонтальное меню с разными стилями.</h1>
+	<p class="mw-page-description">Это простое меню без поддержки выпадающих подменю. Меню имеет несколько стилей и поддерживает ссылки на профили в социальных сетях. Не стесняйтесь использовать это меню в своих проектах!</p>
+	<a href="https://github.com/alexey-trofimov/simple-menu" target="_blank" rel="noopener noreferrer" class="mw-download-link">
+		<i class="fa-brands fa-github"></i><span class="mw-text">Скачать на GitHub</span>
+	</a>
+</header>
+<!-- end: page header -->
+
+<!-- main container -->
+<main class="mw-container">
+	<h2 class="screen-reader-text">Menu demos:</h2>
+
+	<!-- menu label -->
+	<div class="mw-menu-label">Оформление меню №1 (<em>стиль по умолчанию</em>):</div>
+
+	<!-- menu (style 1: default style) -->
+	<nav class="mw-menu mw-border-box">
+		<!-- menu items -->
+		<ul class="mw-menu-list mw-menu-items">
+			<li><a href="#homepage-url"><i class="fa-solid fa-house"></i>Главная</a></li>
+			<li><a href="#archive-url">Архив</a></li>
+			<li><a href="#portfolio-url">Портфолио</a></li>
+			<li><a href="#single-post-url">Одиночная Запись</a></li>
+			<li><a href="#block-styles-url">Стили Блоков</a></li>
+			<li><a href="#blog-page-url">Блог</a></li>
+		</ul>
+		<!-- end: menu items -->
+		<!-- social links -->
+		<ul class="mw-menu-list mw-social-links">
+			<li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" title="Канал на YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+			<li><a href="https://vk.com/" target="_blank" rel="noopener noreferrer" title="Страница в VK"><i class="fa-brands fa-vk"></i></a></li>
+			<li><a href="https://ok.ru/" target="_blank" rel="noopener noreferrer" title="Страница в Одноклассниках"><i class="fa-brands fa-odnoklassniki"></i></a></li>
+		</ul>
+		<!-- end: social links -->
+	</nav>
+	<!-- end: menu (style 1) -->
+
+	<!-- menu label -->
+	<div class="mw-menu-label">Оформление меню №2 (<em>меню с фоном</em>):</div>
+
+	<!-- menu (style 2: menu with background) -->
+	<nav class="mw-menu mw-border-box mw-with-background"><!-- * Add the "mw-with-background" class to apply the style. * -->
+		<!-- menu items -->
+		<ul class="mw-menu-list mw-menu-items">
+			<li><a href="#homepage-url"><i class="fa-solid fa-house"></i>Главная</a></li>
+			<li><a href="#archive-url">Архив</a></li>
+			<li><a href="#portfolio-url">Портфолио</a></li>
+			<li><a href="#single-post-url">Одиночная Запись</a></li>
+			<li><a href="#block-styles-url">Стили Блоков</a></li>
+			<li><a href="#blog-page-url">Блог</a></li>
+		</ul>
+		<!-- end: menu items -->
+		<!-- social links (* nofollow can be removed *) -->
+		<ul class="mw-menu-list mw-social-links">
+			<li><a href="https://www.youtube.com/" target="_blank" rel="nofollow noopener noreferrer" title="Канал на YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+			<li><a href="https://vk.com/" target="_blank" rel="nofollow noopener noreferrer" title="Страница в VK"><i class="fa-brands fa-vk"></i></a></li>
+			<li><a href="https://ok.ru/" target="_blank" rel="nofollow noopener noreferrer" title="Страница в Одноклассниках"><i class="fa-brands fa-odnoklassniki"></i></a></li>
+		</ul>
+		<!-- end: social links -->
+	</nav>
+	<!-- end: menu (style 2) -->
+
+	<!-- menu label -->
+	<div class="mw-menu-label">Оформление меню №3 (<em>стандартное меню с новым эффектом наведения</em>):</div>
+
+	<!-- menu (style 3: second type of hover effect) -->
+	<nav class="mw-menu mw-border-box mw-hover-border-bottom"><!-- * Add the "mw-hover-border-bottom" class to apply the new hover effect. * -->
+		<!-- menu items -->
+		<ul class="mw-menu-list mw-menu-items">
+			<li><a href="#homepage-url"><i class="fa-solid fa-house"></i>Главная</a></li>
+			<li><a href="#archive-url">Архив</a></li>
+			<li><a href="#portfolio-url">Портфолио</a></li>
+			<li><a href="#single-post-url">Одиночная Запись</a></li>
+			<li><a href="#block-styles-url">Стили Блоков</a></li>
+			<li><a href="#blog-page-url">Блог</a></li>
+		</ul>
+		<!-- end: menu items -->
+		<!-- social links (* nofollow can be removed *) -->
+		<ul class="mw-menu-list mw-social-links">
+			<li><a href="https://www.youtube.com/" target="_blank" rel="nofollow noopener noreferrer" title="Канал на YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+			<li><a href="https://vk.com/" target="_blank" rel="nofollow noopener noreferrer" title="Страница в VK"><i class="fa-brands fa-vk"></i></a></li>
+			<li><a href="https://ok.ru/" target="_blank" rel="nofollow noopener noreferrer" title="Страница в Одноклассниках"><i class="fa-brands fa-odnoklassniki"></i></a></li>
+		</ul>
+		<!-- end: social links -->
+	</nav>
+	<!-- end: menu (style 3) -->
+
+	<!-- menu label -->
+	<div class="mw-menu-label">Оформление меню №4 (<em>меню с фоном и новым эффектом наведения</em>):</div>
+
+	<!-- menu (style 4: menu with background and new hover effect) -->
+	<nav class="mw-menu mw-border-box mw-with-background mw-hover-border-bottom"><!-- * You need to add two new classes to apply styles: "mw-with-background" and "mw-hover-border-bottom". * -->
+		<!-- menu items -->
+		<ul class="mw-menu-list mw-menu-items">
+			<li><a href="#homepage-url"><i class="fa-solid fa-house"></i>Главная</a></li>
+			<li><a href="#archive-url">Архив</a></li>
+			<li><a href="#portfolio-url">Портфолио</a></li>
+			<li><a href="#single-post-url">Одиночная Запись</a></li>
+			<li><a href="#block-styles-url">Стили Блоков</a></li>
+			<li><a href="#blog-page-url">Блог</a></li>
+		</ul>
+		<!-- end: menu items -->
+		<!-- social links (* nofollow can be removed *) -->
+		<ul class="mw-menu-list mw-social-links">
+			<li><a href="https://www.youtube.com/" target="_blank" rel="nofollow noopener noreferrer" title="Канал на YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+			<li><a href="https://vk.com/" target="_blank" rel="nofollow noopener noreferrer" title="Страница в VK"><i class="fa-brands fa-vk"></i></a></li>
+			<li><a href="https://ok.ru/" target="_blank" rel="nofollow noopener noreferrer" title="Страница в Одноклассниках"><i class="fa-brands fa-odnoklassniki"></i></a></li>
+		</ul>
+		<!-- end: social links -->
+	</nav>
+	<!-- end: menu (style 4) -->
+
+</main>
+<!-- end: main container -->
+
+<!-- page footer -->
+<footer class="mw-page-footer mw-container">
+	<p><a href="https://minimalweb.net/" target="_blank" rel="noopener noreferrer">Minimalweb.net</a> | Создано с <i class="fa-regular fa-heart fa-beat"></i> в 2023. Спасибо за ваш интерес! Пожалуйста, подписывайтесь на меня: <a href="https://www.youtube.com/@MinimalWebDev" target="_blank" rel="noopener noreferrer">YouTube (<em>Minimal Web Dev</em>)</a>, <a href="https://github.com/alexey-trofimov" target="_blank" rel="noopener noreferrer">GitHub (<em>Alexey Trofimov</em>)</a>.</p>
+	<p>Демонстрация на <a href="index.html"><strong>Английском здесь</strong></a>.</p>
+</footer>
+<!-- end: page footer -->
+
+</body>
+</html>

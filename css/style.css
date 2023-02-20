@@ -218,6 +218,29 @@ body {
 
 }
 
+/* 380px */
+@media (max-width: 380px) {
+
+	/* page title (russian language) */
+	html:lang(ru) .mw-page-title {
+		font-size: 26px;
+		line-height: 1.25;
+	}
+
+	/* page description (russian language) */
+	html:lang(ru) .mw-page-description {
+		font-size: 18px;
+		line-height: 1.45;
+	}
+
+	/* download link (russian language) */
+	html:lang(ru) .mw-download-link {
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+}
+
 
 /*
 Menu
@@ -276,6 +299,9 @@ Menu
 .mw-menu-list li a:hover,
 .mw-menu-list li a:focus {
 	text-decoration: none;
+}
+.mw-menu-list ul {
+	display: none;
 }
 
 /* menu items (ul>li>a) */
