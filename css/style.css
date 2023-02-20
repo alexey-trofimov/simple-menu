@@ -47,6 +47,7 @@ body {
 	margin-left: auto;
 	padding-right: 20px;
 	padding-left: 20px;
+	overflow-wrap: break-word;
 }
 
 /* page header */
@@ -168,8 +169,54 @@ body {
 
 /* responsive styles (header, footer, etc.) */
 
-/*  */
+/* 1000px */
+@media (max-width: 1000px) {
 
+	/* page header */
+	.mw-page-header {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	/* page footer */
+	.mw-page-footer {
+		margin-bottom: 60px;
+	}
+
+}
+
+/* 600px */
+@media (max-width: 600px) {
+
+	/* page title */
+	.mw-page-title {
+		font-size: 35px;
+		line-height: 1.15;
+	}
+
+	/* page description */
+	.mw-page-description {
+		font-size: 20px;
+		line-height: 1.45;
+	}
+
+	/* download link */
+	.mw-download-link {
+		font-size: 18px;
+		line-height: 1.45;
+	}
+
+	/* menu label */
+	.mw-menu-label {
+		line-height: 1.5;
+	}
+
+	/* page footer */
+	.mw-page-footer {
+		line-height: 1.5;
+	}
+
+}
 
 
 /*
@@ -358,8 +405,7 @@ Menu
 	.mw-menu {
 		max-width: 400px;
 		height: auto;
-		margin-right: 0;
-		margin-left: 0;
+		margin: 20px 0 60px;
 		padding: 15px;
 		border-radius: 10px;
 		box-shadow: 0 1px 0 2px #282e2e;
@@ -410,6 +456,15 @@ Menu
 		font-size: 20px;
 	}
 
-	/* ** END ** */
+	/* menu style 2 (menu with background) */
+	.mw-menu.mw-with-background {
+		box-shadow: 0 1px 0 2px #008089;
+	}
+
+	/* menu style 3 (second type of hover effect) */
+	.mw-menu.mw-hover-border-bottom .mw-menu-items li a::after {
+		bottom: 4px;
+		width: calc(50% - 15px);
+	}
 
 }
