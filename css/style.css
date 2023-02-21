@@ -1,9 +1,27 @@
 /*
-Main stylesheet
+Simple menu with social links: Main stylesheet
+style.css v1.0
+
+Project name: Simple Menu
+Project URL: https://demo.minimalweb.net/simple-menu/
+Version: 1.0
+Author: Alexey Trofimov
+Author URL: https://minimalweb.net/
+License: GPLv3
+License URL: https://www.gnu.org/licenses/gpl-3.0.html
+
+Copyright (C) 2023 Alexey Trofimov
 */
 
 /*
-Some common styles
+Table of Contents:
+
+1 - Demo page styles
+2 - Menu styles
+*/
+
+/*
+1 - Demo page styles
 --------------------------------------------------------
 */
 
@@ -243,7 +261,7 @@ body {
 
 
 /*
-Menu
+2 - Menu styles
 --------------------------------------------------------
 */
 
